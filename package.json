@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node tests/*.js",
-    "build": "npm run test && npx parcel build src/index.html"
+    "build": "npm run test && npx parcel build --experimental-scope-hoisting src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
   "dependencies": {
     "date-fns": "^2.24.0",
     "format-number": "^3.0.0",
+    "parcel-plugin-compress": "^2.0.2",
     "react": "^17.0.2",
     "react-async-hook": "^3.6.2",
     "react-dom": "^17.0.2"
